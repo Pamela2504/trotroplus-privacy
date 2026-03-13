@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TroTro+ — Delete My Account & Data</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #2D6A4F;
+      --green-light: #40916C;
+      --green-pale: #D8F3DC;
+      --gold: #F4A261;
+      --bg: #FAFAF7;
+      --text: #1A1A1A;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo-icon {
+      width: 48px; height: 48px;
+      background: white;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+    }
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(24px, 5vw, 38px);
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+    header p { opacity: 0.8; font-size: 15px; }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .info-card {
+      background: var(--green-pale);
+      border-left: 4px solid var(--green);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      font-size: 15px;
+      color: var(--green);
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--green);
+      margin: 28px 0 12px;
+    }
+
+    p { font-size: 15px; color: #374151; margin-bottom: 12px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+    ul li {
+      font-size: 15px;
+      color: #374151;
+      padding: 5px 0 5px 22px;
+      position: relative;
+    }
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-weight: 600;
+    }
+
+    .steps {
+      counter-reset: steps;
+      margin: 16px 0 28px;
+    }
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .step-num {
+      background: var(--green);
+      color: white;
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-text { font-size: 15px; color: #374151; }
+
+    .email-btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      margin: 8px 0 24px;
+      transition: background 0.2s;
+    }
+    .email-btn:hover { background: var(--green-light); }
+
+    .note {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--green); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🚌</div>
+    <span class="logo-text">TroTro+</span>
+  </div>
+  <h1>Delete My Account & Data</h1>
+  <p>We respect your right to remove your data at any time.</p>
+</header>
+
+<div class="container">
+
+  <div class="info-card">
+    You can request deletion of your TroTro+ account and all associated personal data at any time. We process all deletion requests within <strong>30 days</strong>.
+  </div>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Your phone number and account credentials</li>
+    <li>Ride history and route preferences</li>
+    <li>Payment references and transaction records</li>
+    <li>Location history and app activity data</li>
+  </ul>
+
+  <h2>What gets retained</h2>
+  <p>Some data may be retained where required by law (e.g. financial transaction records for tax/regulatory compliance) for up to 7 years.</p>
+
+  <h2>How to request deletion</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">Send an email to our support team using the button below.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">Include the phone number linked to your TroTro+ account.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">We will confirm receipt within 48 hours and complete deletion within 30 days.</div>
+    </div>
+  </div>
+
+  <a class="email-btn" href="mailto:trotroplus.ghana@gmail.com?subject=Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20delete%20my%20TroTro%2B%20account%20and%20all%20associated%20data.%0A%0AMy%20phone%20number%3A%20%5Benter%20your%20number%5D%0A%0AThank%20you.">
+    📧 Request Account Deletion
+  </a>
+
+  <div class="note">
+    Or email us directly at <strong>trotroplus.ghana@gmail.com</strong> with subject line <em>"Account Deletion Request"</em> and your registered phone number.
+  </div>
+
+</div>
+
+<footer>
+  © 2025 TroTro+ · <a href="index.html">Privacy Policy</a> · trotroplus.ghana@gmail.com
+</footer>
+
+</body>
+</html>
