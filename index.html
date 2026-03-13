@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TroTro+ Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #2D6A4F;
+      --green-light: #40916C;
+      --green-pale: #D8F3DC;
+      --gold: #F4A261;
+      --bg: #FAFAF7;
+      --text: #1A1A1A;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 60px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo-icon {
+      width: 48px; height: 48px;
+      background: white;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      letter-spacing: -0.5px;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 400;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    header p {
+      opacity: 0.8;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-card {
+      background: var(--green-pale);
+      border-left: 4px solid var(--green);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 15px;
+      color: var(--green);
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 44px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--green);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      background: var(--green);
+      color: white;
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #374151;
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-weight: 600;
+    }
+
+    .highlight-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--green);
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-card {
+      background: var(--green);
+      color: white;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 6px;
+    }
+
+    .contact-card a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .updated {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🚌</div>
+    <span class="logo-text">TroTro+</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>Your privacy matters — here's exactly what we collect and why.</p>
+</header>
+
+<div class="container">
+
+  <div class="intro-card">
+    TroTro+ ("we", "our", or "us") operates a mobile transit platform designed to digitize Ghana's informal trotro minibus system. This Privacy Policy explains how we collect, use, and protect your personal information when you use our app.
+  </div>
+
+  <section>
+    <h2><span class="num">1</span> Information We Collect</h2>
+    <p>We collect the following information to provide and improve our service:</p>
+    <div class="highlight-box">
+      <strong>Account Information</strong>
+      Your phone number (used for authentication via OTP), preferred language, and user role (rider or driver).
+    </div>
+    <div class="highlight-box">
+      <strong>Location Data</strong>
+      GPS location when the app is in use — used to show nearby routes, stops, and real-time trotro positions. We do not collect location in the background without your consent.
+    </div>
+    <div class="highlight-box">
+      <strong>Payment Information</strong>
+      Transaction references and amounts processed via Hubtel or Paystack. We do not store full payment card details — these are handled securely by our payment partners.
+    </div>
+    <div class="highlight-box">
+      <strong>Usage Data</strong>
+      App interactions, route searches, and ride history — used to improve the service and personalize your experience.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> How We Use Your Information</h2>
+    <ul>
+      <li>To verify your identity via SMS OTP authentication</li>
+      <li>To show real-time trotro routes, stops, and arrival estimates</li>
+      <li>To process mobile fare payments securely</li>
+      <li>To send ride confirmations and service notifications</li>
+      <li>To improve app performance and fix issues</li>
+      <li>To comply with applicable Ghanaian laws and regulations</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Data Sharing</h2>
+    <p>We do not sell your personal data. We share data only with:</p>
+    <ul>
+      <li><strong>AfricasTalking</strong> — for SMS OTP delivery</li>
+      <li><strong>Hubtel / Paystack</strong> — for payment processing</li>
+      <li><strong>Railway.app</strong> — our secure cloud infrastructure provider</li>
+      <li>Law enforcement or regulators, only when legally required</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Data Retention</h2>
+    <p>We retain your account data for as long as your account is active. If you delete your account, we remove your personal data within 30 days, except where retention is required by law (e.g. financial transaction records).</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and data</li>
+      <li>Withdraw consent for location tracking at any time via device settings</li>
+    </ul>
+    <p>To exercise these rights, contact us at the email below.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Security</h2>
+    <p>We use industry-standard security measures including encrypted data transmission (HTTPS/TLS), hashed authentication tokens, and secure cloud infrastructure. No system is 100% secure, but we take your data protection seriously.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Children's Privacy</h2>
+    <p>TroTro+ is not directed at children under 13. We do not knowingly collect data from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via the app or by email. Continued use of TroTro+ after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <div class="contact-card">
+    <h3>Questions or Concerns?</h3>
+    <p>We're here to help. Reach out to our team directly.</p>
+    <p>📧 <a href="mailto:trotroplus.ghana@gmail.com">trotroplus.ghana@gmail.com</a></p>
+    <p style="margin-top:8px; font-size:13px; color:rgba(255,255,255,0.6);">TroTro+ · Accra, Ghana</p>
+  </div>
+
+  <p class="updated">Last updated: March 13, 2025 · Effective immediately</p>
+
+</div>
+
+<footer>
+  © 2025 TroTro+. All rights reserved.
+</footer>
+
+</body>
+</html>
